@@ -1,1 +1,121 @@
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Oferta | Speed Hanys</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="Speed Hanys">
+  </a>
+
+  <nav class="nav">
+    <a href="index.html" data-i18n="nav_home">Start</a>
+    <a href="oferta.html" data-i18n="nav_offer">Oferta</a>
+    <a href="kalkulator.html" data-i18n="nav_calculator">Kalkulator</a>
+    <a href="kontakt.html" data-i18n="nav_contact">Kontakt</a>
+  </nav>
+
+  <div class="lang-switch">
+    <button data-lang="pl">PL</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="de">DE</button>
+  </div>
+</header>
+
+<section class="sub-hero">
+  <img src="krajobraz.png" alt="Transport w trasie">
+
+  <div class="sub-hero-content">
+    <span class="eyebrow" data-i18n="offer_badge">Oferta</span>
+    <h1 data-i18n="offer_title">Transport dopasowany do Twoich potrzeb.</h1>
+    <p data-i18n="offer_text">
+      Realizujemy przewóz rzeczy, przeprowadzki, transport sprzętu, materiałów budowlanych oraz nietypowych ładunków.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="offer-grid">
+    <article class="offer-card">
+      <img src="bagaznik.png" alt="Transport mebli">
+      <div class="offer-card-content">
+        <span>01</span>
+        <h3 data-i18n="service_1_title">Meble i wyposażenie</h3>
+        <p data-i18n="service_1_text">Bezpieczny przewóz mebli, kanap, szaf, stołów i wyposażenia mieszkań.</p>
+      </div>
+    </article>
+
+    <article class="offer-card">
+      <img src="bagaznik drugi.png" alt="Transport AGD RTV">
+      <div class="offer-card-content">
+        <span>02</span>
+        <h3 data-i18n="service_2_title">AGD / RTV</h3>
+        <p data-i18n="service_2_text">Transport lodówek, pralek, zmywarek, telewizorów i większego sprzętu.</p>
+      </div>
+    </article>
+
+    <article class="offer-card">
+      <img src="bagaznik 3.png" alt="Materiały budowlane">
+      <div class="offer-card-content">
+        <span>03</span>
+        <h3 data-i18n="service_3_title">Materiały budowlane</h3>
+        <p data-i18n="service_3_text">Przewóz materiałów ze sklepów budowlanych, marketów i hurtowni.</p>
+      </div>
+    </article>
+
+    <article class="offer-card">
+      <img src="van bialy.png" alt="Transport przyczepką">
+      <div class="offer-card-content">
+        <span>04</span>
+        <h3 data-i18n="service_4_title">Transport przyczepką</h3>
+        <p data-i18n="service_4_text">Przewóz większych i nietypowych ładunków z wykorzystaniem przyczepki.</p>
+      </div>
+    </article>
+
+    <article class="offer-card">
+      <img src="jazda.png" alt="Transport międzynarodowy">
+      <div class="offer-card-content">
+        <span>05</span>
+        <h3 data-i18n="service_5_title">Polska i Europa</h3>
+        <p data-i18n="service_5_text">Transport lokalny, krajowy oraz międzynarodowy po wcześniejszym ustaleniu trasy.</p>
+      </div>
+    </article>
+
+    <article class="offer-card">
+      <img src="krajobraz.png" alt="Transport pojazdów">
+      <div class="offer-card-content">
+        <span>06</span>
+        <h3 data-i18n="service_6_title">Motocykle i quady</h3>
+        <p data-i18n="service_6_text">Przewóz jednośladów, quadów i innych niestandardowych rzeczy.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="cta">
+  <span data-i18n="cta_badge">Szybka wycena</span>
+  <h2 data-i18n="offer_cta_title">Nie wiesz, którą usługę wybrać?</h2>
+  <p data-i18n="offer_cta_text">Skorzystaj z kalkulatora albo zadzwoń — dobierzemy najlepszy wariant transportu.</p>
+
+  <div class="cta-buttons">
+    <a href="kalkulator.html" class="btn-primary" data-i18n="cta_calc">Oblicz cenę</a>
+    <a href="kontakt.html" class="btn-secondary" data-i18n="nav_contact">Kontakt</a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
