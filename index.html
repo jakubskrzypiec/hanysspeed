@@ -1,1 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Speed Hanys | Transport i przeprowadzki</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="Speed Hanys">
+  </a>
+
+  <nav class="nav">
+    <a href="index.html" data-i18n="nav_home">Start</a>
+    <a href="oferta.html" data-i18n="nav_offer">Oferta</a>
+    <a href="kalkulator.html" data-i18n="nav_calculator">Kalkulator</a>
+    <a href="kontakt.html" data-i18n="nav_contact">Kontakt</a>
+  </nav>
+
+  <div class="lang-switch">
+    <button data-lang="pl">PL</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="de">DE</button>
+  </div>
+
+  <button class="menu-toggle" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<section class="hero">
+  <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <span class="eyebrow" data-i18n="hero_badge">Transport • Przeprowadzki • Polska i Europa</span>
+
+    <h1 data-i18n="hero_title">Transport rzeczy szybko, bezpiecznie i bez zbędnych komplikacji.</h1>
+
+    <p data-i18n="hero_text">
+      Realizujemy transport mebli, sprzętu AGD/RTV, materiałów budowlanych, przeprowadzki oraz przewóz pojazdów. Działamy lokalnie, krajowo i międzynarodowo.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="tel:531153794" class="btn-primary" data-i18n="hero_call">Zadzwoń teraz</a>
+      <a href="kalkulator.html" class="btn-secondary" data-i18n="hero_calc">Oblicz wstępną cenę</a>
+    </div>
+  </div>
+</section>
+
+<section class="quick-info">
+  <div>
+    <strong data-i18n="quick_1_title">Od 100 zł</strong>
+    <span data-i18n="quick_1_text">transport lokalny</span>
+  </div>
+
+  <div>
+    <strong data-i18n="quick_2_title">PL / EN / DE</strong>
+    <span data-i18n="quick_2_text">obsługa w 3 językach</span>
+  </div>
+
+  <div>
+    <strong data-i18n="quick_3_title">Śląsk / Polska / Europa</strong>
+    <span data-i18n="quick_3_text">elastyczny zakres tras</span>
+  </div>
+</section>
+
+<section class="section services-preview">
+  <div class="section-title">
+    <span data-i18n="services_badge">Oferta</span>
+    <h2 data-i18n="services_title">Co możemy dla Ciebie przewieźć?</h2>
+    <p data-i18n="services_text">
+      Od pojedynczych przedmiotów po większe przeprowadzki i transport specjalny.
+    </p>
+  </div>
+
+  <div class="preview-grid">
+    <article class="preview-card">
+      <img src="bagaznik.png" alt="Transport mebli">
+      <div>
+        <h3 data-i18n="service_1_title">Meble i wyposażenie</h3>
+        <p data-i18n="service_1_text">Bezpieczny przewóz mebli, kanap, szaf, stołów i wyposażenia mieszkań.</p>
+      </div>
+    </article>
+
+    <article class="preview-card">
+      <img src="bagaznik drugi.png" alt="Transport AGD RTV">
+      <div>
+        <h3 data-i18n="service_2_title">AGD / RTV</h3>
+        <p data-i18n="service_2_text">Transport lodówek, pralek, zmywarek, telewizorów i większego sprzętu.</p>
+      </div>
+    </article>
+
+    <article class="preview-card">
+      <img src="bagaznik 3.png" alt="Materiały budowlane">
+      <div>
+        <h3 data-i18n="service_3_title">Materiały budowlane</h3>
+        <p data-i18n="service_3_text">Przewóz materiałów ze sklepów budowlanych, marketów i hurtowni.</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="center-btn">
+    <a href="oferta.html" class="btn-primary" data-i18n="services_button">Zobacz pełną ofertę</a>
+  </div>
+</section>
+
+<section class="van-system">
+  <div class="section-title">
+    <span data-i18n="van_badge">Zakres usług</span>
+    <h2 data-i18n="van_title">Jeden transport, wiele możliwości.</h2>
+    <p data-i18n="van_text">
+      Wybierz usługę, a my dobierzemy odpowiedni sposób przewozu, zabezpieczenia i zakres pomocy.
+    </p>
+  </div>
+
+  <div class="van-map">
+    <img src="van.png" alt="Van Speed Hanys z zakresem transportu">
+
+    <div class="hotspot hotspot-furniture">
+      <span></span>
+      <div class="hotspot-info">
+        <h3 data-i18n="hotspot_1_title">Meble</h3>
+        <p data-i18n="hotspot_1_text">Transport mebli, kanap, szaf i wyposażenia mieszkań.</p>
+      </div>
+    </div>
+
+    <div class="hotspot hotspot-agd">
+      <span></span>
+      <div class="hotspot-info">
+        <h3 data-i18n="hotspot_2_title">AGD / RTV</h3>
+        <p data-i18n="hotspot_2_text">Przewóz sprzętu z zabezpieczeniem przed uszkodzeniem.</p>
+      </div>
+    </div>
+
+    <div class="hotspot hotspot-build">
+      <span></span>
+      <div class="hotspot-info">
+        <h3 data-i18n="hotspot_3_title">Budowlanka</h3>
+        <p data-i18n="hotspot_3_text">Materiały budowlane, paczki, elementy remontowe.</p>
+      </div>
+    </div>
+
+    <div class="hotspot hotspot-quad">
+      <span></span>
+      <div class="hotspot-info">
+        <h3 data-i18n="hotspot_4_title">Motocykle i quady</h3>
+        <p data-i18n="hotspot_4_text">Transport jednośladów, quadów i nietypowego ładunku.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section split">
+  <div class="split-image">
+    <img src="jazda.png" alt="Van w trasie">
+  </div>
+
+  <div class="split-text">
+    <span data-i18n="why_badge">Dlaczego my?</span>
+    <h2 data-i18n="why_title">Konkretny transport bez przeciągania tematu.</h2>
+    <p data-i18n="why_text">
+      Stawiamy na szybki kontakt, elastyczne terminy i bezpieczne zabezpieczenie przewożonych rzeczy. Każdą wycenę dopasowujemy do trasy, zakresu usługi i rodzaju ładunku.
+    </p>
+
+    <div class="check-list">
+      <p data-i18n="why_1">✓ szybka wycena telefoniczna</p>
+      <p data-i18n="why_2">✓ transport lokalny i międzynarodowy</p>
+      <p data-i18n="why_3">✓ pomoc przy załadunku i rozładunku</p>
+      <p data-i18n="why_4">✓ możliwość wstępnej kalkulacji online</p>
+    </div>
+
+    <a href="kalkulator.html" class="btn-primary" data-i18n="why_button">Przejdź do kalkulatora</a>
+  </div>
+</section>
+
+<section class="cta">
+  <span data-i18n="cta_badge">Szybka wycena</span>
+  <h2 data-i18n="cta_title">Potrzebujesz transportu? Sprawdź orientacyjny koszt.</h2>
+  <p data-i18n="cta_text">
+    Skorzystaj z kalkulatora albo zadzwoń bezpośrednio — ustalimy szczegóły i zaproponujemy najlepsze rozwiązanie.
+  </p>
+
+  <div class="cta-buttons">
+    <a href="kalkulator.html" class="btn-primary" data-i18n="cta_calc">Oblicz cenę</a>
+    <a href="tel:531153794" class="btn-secondary" data-i18n="cta_call">531 153 794</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div>
+    <img src="logo.png" alt="Speed Hanys">
+    <p data-i18n="footer_text">Transport, przeprowadzki i przewóz rzeczy.</p>
+  </div>
+
+  <div>
+    <a href="index.html" data-i18n="nav_home">Start</a>
+    <a href="oferta.html" data-i18n="nav_offer">Oferta</a>
+    <a href="kalkulator.html" data-i18n="nav_calculator">Kalkulator</a>
+    <a href="kontakt.html" data-i18n="nav_contact">Kontakt</a>
+  </div>
+
+  <div>
+    <p>531 153 794</p>
+    <p>515 975 107</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
