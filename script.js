@@ -386,3 +386,24 @@ if (calculateBtn) {
   calculateBtn.addEventListener("click", calculatePrice);
   calculatePrice();
 }
+const heroVideo = document.querySelector(".hero-video");
+
+function startHeroVideo() {
+  if (!heroVideo) return;
+
+  heroVideo.muted = true;
+  heroVideo.defaultMuted = true;
+  heroVideo.playsInline = true;
+
+  heroVideo.setAttribute("muted", "");
+  heroVideo.setAttribute("playsinline", "");
+  heroVideo.setAttribute("webkit-playsinline", "");
+
+  heroVideo.play().catch(() => {});
+}
+
+document.addEventListener("DOMContentLoaded", startHeroVideo);
+window.addEventListener("load", startHeroVideo);
+document.addEventListener("touchstart", startHeroVideo, { once: true });
+document.addEventListener("click", startHeroVideo, { once: true });
+document.addEventListener("scroll", startHeroVideo, { once: true });
