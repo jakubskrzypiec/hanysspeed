@@ -1,1 +1,100 @@
 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kontakt | Speed Hanys</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="Speed Hanys">
+  </a>
+
+  <nav class="nav">
+    <a href="index.html" data-i18n="nav_home">Start</a>
+    <a href="oferta.html" data-i18n="nav_offer">Oferta</a>
+    <a href="kalkulator.html" data-i18n="nav_calculator">Kalkulator</a>
+    <a href="kontakt.html" data-i18n="nav_contact">Kontakt</a>
+  </nav>
+
+  <div class="lang-switch">
+    <button data-lang="pl">PL</button>
+    <button data-lang="en">EN</button>
+    <button data-lang="de">DE</button>
+  </div>
+</header>
+
+<section class="sub-hero">
+  <img src="van bialy.png" alt="Kontakt Speed Hanys">
+
+  <div class="sub-hero-content">
+    <span class="eyebrow" data-i18n="contact_badge">Kontakt</span>
+    <h1 data-i18n="contact_title">Potrzebujesz transportu? Skontaktuj się z nami.</h1>
+    <p data-i18n="contact_text">
+      Zadzwoń lub wyślij krótką wiadomość. Ustalimy trasę, zakres pomocy i orientacyjny koszt.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="contact-layout">
+    <div class="contact-data">
+      <div class="contact-item">
+        <span data-i18n="phone_label">Telefon</span>
+        <strong><a href="tel:531153794">531 153 794</a></strong>
+      </div>
+
+      <div class="contact-item">
+        <span data-i18n="phone_label">Telefon</span>
+        <strong><a href="tel:515975107">515 975 107</a></strong>
+      </div>
+
+      <div class="contact-item">
+        <span data-i18n="area_label">Obszar działania</span>
+        <strong data-i18n="area_value">Śląsk / Polska / Europa</strong>
+      </div>
+    </div>
+
+    <div class="contact-box">
+      <div class="section-title" style="margin-bottom: 30px;">
+        <span data-i18n="form_badge">Formularz</span>
+        <h2 data-i18n="form_title">Napisz kilka szczegółów.</h2>
+        <p data-i18n="form_text">Ten formularz jest pokazowy. Po wdrożeniu można podpiąć go pod maila.</p>
+      </div>
+
+      <form class="form-grid">
+        <div class="form-group">
+          <label data-i18n="form_name">Imię / firma</label>
+          <input type="text" placeholder="Jan Kowalski">
+        </div>
+
+        <div class="form-group">
+          <label data-i18n="form_route">Trasa</label>
+          <input type="text" placeholder="Katowice → Berlin">
+        </div>
+
+        <div class="form-group">
+          <label data-i18n="form_message">Co trzeba przewieźć?</label>
+          <textarea rows="5" placeholder="Meble, AGD, paczki..."></textarea>
+        </div>
+
+        <button type="button" class="btn-primary" data-i18n="form_button">Wyślij zapytanie</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
